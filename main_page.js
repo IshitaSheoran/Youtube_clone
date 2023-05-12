@@ -139,7 +139,7 @@ let list = ""
 let count = 0
 
 function iframelink(link, title, creator, photo, subscribers) {
-    history.pushState({link, title, creator, photo, subscribers},"","/next_page.html");
+    history.pushState({link, title, creator, photo, subscribers},"","next_page.html");
     window.location.reload() 
 }
 //console.log(main_page_list)

@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Youtube Clone
-        </title>
-
+        <title></title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="youtube.css">
+        <link rel="stylesheet" href="next_page.css">
+        <script src="./next_page.js" defer></script>       
         
-
     </head>
+    <body>
 
-    <body>     
-        
         <header class="header"> <!--Header-->
             <div class="left-header">
                 <img class="hamburger" src="youtube logos/hamburger-menu.svg">
                 <a href = "/index.html">
-                <img class="youtube-logo" src="youtube logos/youtube-logo.svg">
+                    <img class="youtube-logo" src="youtube logos/youtube-logo.svg">
                 </a>
             </div>
             <div class="middle-header">
@@ -58,38 +52,16 @@
             </div>
         </header>
 
-        <nav class="sidebar">
-            <div class="sidebar-buttons">
-                <img src="youtube logos/home.svg">
-                <div class="sidebar-titles">Home</div>
-            </div>
-            <div class="sidebar-buttons">
-                <img src="youtube logos/explore.svg">
-                <div class="sidebar-titles">Explore</div>
-            </div>
-            <div class="sidebar-buttons">
-                <img src="youtube logos/subscriptions.svg">
-                <div class="sidebar-titles">Subscriptions</div>
-            </div>
-            <div class="sidebar-buttons">
-                <img src="youtube logos/originals.svg">
-                <div class="sidebar-titles">Originals</div>
-            </div>
-            <div class="sidebar-buttons">
-                <img src="youtube logos/youtube-music.svg">
-                <div class="sidebar-titles">YouTube Music</div> 
-            </div>
-            <div class="sidebar-buttons">
-                <img src="youtube logos/library.svg">
-                <div class="sidebar-titles">Library</div>
-            </div>            
-        </nav>
+        <div class="row">
+            <div id="iframeChange" style="margin-right: 30px;" class="column"> <!--main Video-->
+                               
+            </div> 
+    
+            <div id="side-vid-list" class="column"> <!--side list-->                   
 
-        <main>
-            <div id="main_page" class="video-grid">
-                
             </div>
-        </main>     
+        </div>
+        
+
     </body>
-    <script src="main_page.js" defer></script>
 </html>

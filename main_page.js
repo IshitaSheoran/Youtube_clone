@@ -140,6 +140,8 @@ let count = 0
 
 function iframelink(link, title, creator, photo, subscribers) {
     history.pushState({link, title, creator, photo, subscribers},"","next_page.html");
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event : "next_page", video : title});
     window.location.reload() 
 }
 //console.log(main_page_list)
